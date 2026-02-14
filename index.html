@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Будешь моей валентинкой?</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <main class="main-content">
+            <div class="valentine-card">
+                <div class="card-content">
+                    <h1 class="main-title">Для самой вкусной Вишенки</h1>
+                    <div class="emoji-container">
+                        <span class="love-emoji">🥰</span>
+                    </div>
+                    <h2 class="question">Будешь моей валентинкой?</h2>
+                    <div class="answer-buttons">
+                        <button class="btn btn-yes" onclick="sayYes()">Да</button>
+                        <button class="btn btn-no" id="noBtn" onmouseover="moveNoButton()" onclick="sayNo()">Нет</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <div class="hearts-background">
+        <div class="floating-heart" style="left: 5%; animation-delay: 0s;">❤️</div>
+        <div class="floating-heart" style="left: 15%; animation-delay: 1s;">💕</div>
+        <div class="floating-heart" style="left: 25%; animation-delay: 3s;">❤️</div>
+        <div class="floating-heart" style="left: 35%; animation-delay: 2s;">💖</div>
+        <div class="floating-heart" style="left: 45%; animation-delay: 4s;">💕</div>
+        <div class="floating-heart" style="left: 55%; animation-delay: 1s;">💖</div>
+        <div class="floating-heart" style="left: 65%; animation-delay: 3s;">❤️</div>
+        <div class="floating-heart" style="left: 75%; animation-delay: 2s;">💖</div>
+        <div class="floating-heart" style="left: 85%; animation-delay: 4s;">💕</div>
+        <div class="floating-heart" style="left: 95%; animation-delay: 1s;">💖</div>
+        <div class="floating-heart" style="left: 10%; animation-delay: 0.5s;">❤️</div>
+        <div class="floating-heart" style="left: 20%; animation-delay: 2.5s;">💕</div>
+        <div class="floating-heart" style="left: 30%; animation-delay: 4.5s;">❤️</div>
+        <div class="floating-heart" style="left: 40%; animation-delay: 1.5s;">💖</div>
+        <div class="floating-heart" style="left: 50%; animation-delay: 3.5s;">💕</div>
+        <div class="floating-heart" style="left: 60%; animation-delay: 2.5s;">❤️</div>
+        <div class="floating-heart" style="left: 70%; animation-delay: 4.5s;">💖</div>
+        <div class="floating-heart" style="left: 80%; animation-delay: 1.5s;">💕</div>
+        <div class="floating-heart" style="left: 90%; animation-delay: 3.5s;">💖</div>
+        <div class="floating-heart" style="left: 95%; animation-delay: 2.5s;">💖</div>
+        <div class="floating-heart" style="left: 5%; animation-delay: 1s;">❤️</div>
+        <div class="floating-heart" style="left: 15%; animation-delay: 2.5s;">💕</div>
+        <div class="floating-heart" style="left: 25%; animation-delay: 3.5s;">❤️</div>
+        <div class="floating-heart" style="left: 35%; animation-delay: 4.5s;">💖</div>
+        <div class="floating-heart" style="left: 45%; animation-delay: 3.5s;">💕</div>
+        <div class="floating-heart" style="left: 55%; animation-delay: 4.5s;">💖</div>
+        <div class="floating-heart" style="left: 65%; animation-delay: 3.5s;">❤️</div>
+        <div class="floating-heart" style="left: 75%; animation-delay: 2.5s;">💖</div>
+        <div class="floating-heart" style="left: 85%; animation-delay: 4.5s;">💕</div>
+        <div class="floating-heart" style="left: 95%; animation-delay: 3.5s;">💖</div>
+        <div class="floating-heart" style="left: 10%; animation-delay: 5s;">❤️</div>
+        <div class="floating-heart" style="left: 20%; animation-delay: 5.5s;">💕</div>
+        <div class="floating-heart" style="left: 30%; animation-delay: 5s;">❤️</div>
+        <div class="floating-heart" style="left: 40%; animation-delay: 5s;">💖</div>
+        <div class="floating-heart" style="left: 50%; animation-delay: 5s;">💕</div>
+        <div class="floating-heart" style="left: 60%; animation-delay: 5s;">❤️</div>
+        <div class="floating-heart" style="left: 70%; animation-delay: 5s;">💖</div>
+        <div class="floating-heart" style="left: 80%; animation-delay: 5s;">💕</div>
+        <div class="floating-heart" style="left: 90%; animation-delay: 5s;">💖</div>
+        <div class="floating-heart" style="left: 95%; animation-delay: 5s;">💖</div>
+    </div>
+    
+    <div class="modal" id="responseModal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle">Ура!</h2>
+            <p id="modalMessage">Ты сделала меня самым счастливым!</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
